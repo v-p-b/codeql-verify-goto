@@ -1,9 +1,3 @@
-/**
- * @kind problem
- * @id cpp/test
- * @problem.severity error
- */
-
 import cpp
 import semmle.code.cpp.dataflow.new.DataFlow
  
@@ -48,11 +42,10 @@ where
   // v is not modified in the basic block of the label
   // Note: This doesn't handle if v is is used as an output argument to a function
   not exists (VariableAccess a | a.getTarget() = v and a.isModified() and a.getEnclosingStmt().getBasicBlock() = getRecSuccessor(gotoLabel)) and
-  //i.getBasicBlock() = getRecSuccessor(ass.getEnclosingStmt()) and
   // There is an untainted dataflow from a variable assignment to the return
   // Note: This will miss ternary assignments in return if returned expressions don't include v  (`return ret==8?0:1;`) 
   sourceDef.asExpr() = ass and
   sinkRet.asExpr() = ret.getAChild() and
   DataFlow::localFlow(sourceDef, sinkRet)
 select i, 
-     "Function: "+f //+" - Label: "+gotoLabel.getName()+" - Variable: "+v+"- Assignment: "+ass.getLocation().getFile().getBaseName()+"("+ass.getLocation().getStartLine()+":"+ass.getLocation().getStartColumn()+")"
+     "Function: "+f+" - Label: "+gotoLabel.getName()+" - Variable: "+v+"- Assignment: "+ass.getLocation().getFile().getBaseName()+"("+ass.getLocation().getStartLine()+":"+ass.getLocation().getStartColumn()+")"
