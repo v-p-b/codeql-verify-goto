@@ -1,0 +1,13 @@
+| ssh_krl_from_blob              | krl.c:1061:38:1064:2         |
+| revoked_certs_generate         | krl.c:676:41:679:4           |
+| sshsk_load_resident            | ssh-sk-client.c:440:48:443:3 |
+| sshsk_load_resident            | ssh-sk-client.c:451:32:454:3 |
+| process_ext_session_bind       | ssh-agent.c:1742:48:1745:2   |
+| parse_key_constraint_extension | ssh-agent.c:1209:22:1212:3   |
+| parse_key_constraint_extension | ssh-agent.c:1218:46:1221:4   |
+| parse_key_constraint_extension | ssh-agent.c:1235:23:1238:3   |
+| parse_key_constraint_extension | ssh-agent.c:1246:40:1249:4   |
+| input_userauth_pk_ok           | sshconnect2.c:700:61:703:2   |
+| input_userauth_pk_ok           | sshconnect2.c:708:27:713:2   |
+| input_userauth_pk_ok           | sshconnect2.c:726:28:732:2   |
+| cert_filter_principals         | sshsig.c:875:61:878:2        |

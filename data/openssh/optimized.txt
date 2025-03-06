@@ -1,0 +1,16 @@
+Function: ssh_krl_from_blob - Label: out - Variable: r	krl.c:1061:2
+Function: revoked_certs_generate - Label: out - Variable: r	krl.c:676:4
+Function: parse_key_constraint_extension - Label: out - Variable: r	ssh-agent.c:1209:3
+Function: parse_key_constraint_extension - Label: out - Variable: r	ssh-agent.c:1218:4
+Function: parse_key_constraint_extension - Label: out - Variable: r	ssh-agent.c:1235:3
+Function: parse_key_constraint_extension - Label: out - Variable: r	ssh-agent.c:1246:4
+Function: sshkey_ecdsa_fixup_group - Label: out - Variable: nid	ssh-ecdsa.c:65:2
+Function: sshkey_ecdsa_fixup_group - Label: out - Variable: nid	ssh-ecdsa.c:80:3
+Function: sshkey_ecdsa_fixup_group - Label: out - Variable: nid	ssh-ecdsa.c:87:2
+Function: sshkey_ecdsa_fixup_group - Label: out - Variable: nid	ssh-ecdsa.c:92:2
+Function: sshsk_load_resident - Label: out - Variable: r	ssh-sk-client.c:440:3
+Function: sshsk_load_resident - Label: out - Variable: r	ssh-sk-client.c:450:3
+Function: input_userauth_pk_ok - Label: done - Variable: r	sshconnect2.c:700:2
+Function: input_userauth_pk_ok - Label: done - Variable: r	sshconnect2.c:708:2
+Function: input_userauth_pk_ok - Label: done - Variable: r	sshconnect2.c:726:2
+Function: cert_filter_principals - Label: out - Variable: r	sshsig.c:875:2

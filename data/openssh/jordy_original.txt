@@ -1,0 +1,5 @@
+1	ssh_krl_from_blob	krl.c:1061:2	goto ...	r
+2	revoked_certs_generate	krl.c:676:4	goto ...	r
+3	parse_key_constraint_extension	ssh-agent.c:1209:3	goto ...	r
+4	parse_key_constraint_extension	ssh-agent.c:1218:4	goto ...	r
+5	parse_key_constraint_extension	ssh-agent.c:1235:3	goto ...	r
